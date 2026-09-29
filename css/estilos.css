@@ -1,0 +1,95 @@
+/* CONFIGURAÇÕES GERAIS */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* HOME */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+.hero h1 {
+    max-width: 700px;
+}
+
+.hero p {
+    max-width: 600px;
+}
+
+
+/* DEPOIMENTOS */
+
+.depoimento {
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 15%;
+
+    background-color: #212529;
+
+    color: white;
+}
+
+.depoimento p {
+    max-width: 700px;
+}
+
+
+/* CARDS */
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 80vh;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .depoimento {
+        padding: 50px 20%;
+    }
+
+}
